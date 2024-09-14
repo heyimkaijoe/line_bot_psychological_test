@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "questions#index"
+
+  post "/line/callback", to: "line_bot#callback"
 end
